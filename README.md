@@ -1,9 +1,9 @@
-# ðŸŒ API REST de Gesti¨®n de Viajes
+ðŸŒ API REST de GestiÃ³n de Viajes
 
-API REST desarrollada con **Spring Boot** para la gesti¨®n completa de viajes (CRUD).
-Implementa las mejores pr¨¢cticas de arquitectura en capas con Spring Data JPA y base de datos H2.
+API REST desarrollada con **Spring Boot** para la gestiÂ¨Â®n completa de viajes (CRUD).
+Implementa las mejores prÂ¨Â¢cticas de arquitectura en capas con Spring Data JPA y base de datos H2.
 
-## Stack Tecnol¨®gico
+## Stack TecnolÃ³gico
 
 - Java 17
 - Spring Boot 3.x
@@ -12,7 +12,7 @@ Implementa las mejores pr¨¢cticas de arquitectura en capas con Spring Data JPA y
 - Maven
 - Arquitectura MVC
 
-## Instalaci¨®n R¨¢pida
+## InstalaciÃ³ RÃ¡pida
 
 ```bash
 # Clonar el proyecto
@@ -22,13 +22,13 @@ git clone <url-del-repositorio>
 mvn spring-boot:run
 ```
 
-La aplicaci¨®n iniciar¨¢ en `https://mi-app-viajes-yl0z.onrender.com`                          
+La aplicaciÃ³n iniciarÃ¡ en `https://mi-app-viajes-yl0z.onrender.com`
 
 ## API Endpoints
 
 ### Base URL: `http://localhost:8080/viajes`
 
-| M¨¦todo | Endpoint | Descripci¨®n |
+| MÂ¨Â¦todo | Endpoint | DescripciÃ³n |
 |--------|----------|-------------|
 | `GET` | `/viajes` | Listar todos los viajes |
 | `POST` | `/viajes` | Crear nuevo viaje |
@@ -40,7 +40,7 @@ La aplicaci¨®n iniciar¨¢ en `https://mi-app-viajes-yl0z.onrender.com`
 
 ```json
 {
-  "origen": "Los ¨¢ngeles",
+  "origen": "Los Â¨Â¢ngeles",
   "destino": "Sidney",
   "fecha": "2025-12-22",
   "dias": 15,
@@ -61,7 +61,7 @@ POST http://localhost:8080/viajes
 Content-Type: application/json
 
 {
-  "origen": "Los ¨¢ngeles",
+  "origen": "Los Angeles",
   "destino": "Sidney",
   "fecha": "2025-12-22",
   "dias": 15,
@@ -77,7 +77,7 @@ Content-Type: application/json
 {
   "id":6,
   "origen": "Santiago",
-  "destino": "Berl¨ªn",
+  "destino": "BerlÃ­n",
   "fecha": "2025-10-01",
   "dias": 9,
   "precioUSD": 1900.00
@@ -101,13 +101,13 @@ DELETE http://localhost:3000/viaje?id=6
 ## Arquitectura
 
 ```
-â”œâ”€â”€ controller/     â†?Endpoints REST
-â”œâ”€â”€ service/        â†?LÃ³gica de negocio
-â”œâ”€â”€ repository/     â†?Acceso a datos (JPA)
-â””â”€â”€ model/          â†?Entidades
+- controller/     Endpoints REST
+- service/        LÃ³gica de negocio
+- repository/     Acceso a datos (JPA)
+- model/          Entidades
 ```
 
-**Patr¨®n:** Modelo-Vista-Controlador (MVC)
+**PatrÂ¨Â®n:** Modelo-Vista-Controlador (MVC)
 
 ---
 
